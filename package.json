@@ -5,7 +5,8 @@
   "author": "Ian Salazar",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "devDependencies": {
     "@types/jest": "^29.0.1",
