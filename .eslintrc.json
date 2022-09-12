@@ -1,0 +1,42 @@
+{
+    "env": {
+        "es2019": true,
+        "node": true,
+        "jest":true
+    },
+    "extends": [
+        "standard-with-typescript",
+        "plugin:@typescript-eslint/recommeded",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project":"./tsconfig.json"
+    },
+    "rules": {
+        "prettier/prettier": "off",      
+        "@typescript-eslint/interface-name-prefix": [
+          "error",
+          { "prefixWithI": "always" }
+        ],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "ts": "never"
+          }
+        ]
+    },
+    "settings": {
+    "import/resolver": {
+        "typescript": {}
+    }
+    }
+}
